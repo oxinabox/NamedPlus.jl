@@ -206,6 +206,8 @@ end
 end
 @testset "base piracy" begin
 
+    @pirate Base
+
     # Base behaviour
     @test ones() isa Array{Float64, 0}
     @test zeros() isa Array{Float64, 0}
